@@ -11978,6 +11978,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libmidasserviceintf_aidl",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -11989,7 +11990,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "android.frameworks.stats@1.0",
+                "android.frameworks.stats",
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
@@ -18129,6 +18130,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdmmsrc_system",
+    allow_undefined_symbols: true,
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -18246,6 +18249,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdservice",
+    check_elf_files: false,
+    allow_undefined_symbols: true,
     owner: "oneplus",
     strip: {
         none: true,
@@ -18272,7 +18277,7 @@ cc_prebuilt_library_shared {
                 "libaudioclient",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
