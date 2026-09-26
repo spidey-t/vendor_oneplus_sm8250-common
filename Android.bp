@@ -3714,7 +3714,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
+    vendor_available: true,
 }
 
 cc_prebuilt_library_shared {
@@ -3759,7 +3759,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
+    vendor_available: true,
 }
 
 cc_prebuilt_library_shared {
@@ -3806,7 +3806,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
+    vendor_available: true,
 }
 
 cc_prebuilt_library_shared {
