@@ -3677,6 +3677,8 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.perf@2.0",
     owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
     strip: {
         none: true,
     },
@@ -3714,12 +3716,13 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.perf@2.1",
     owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
     strip: {
         none: true,
     },
@@ -3759,12 +3762,13 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.perf@2.2",
     owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
     strip: {
         none: true,
     },
@@ -3806,7 +3810,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18110,7 +18113,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
