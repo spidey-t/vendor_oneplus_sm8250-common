@@ -18087,6 +18087,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libwfdcommonutils",
     owner: "oneplus",
+    check_elf_files: false,
     strip: {
         none: true,
     },
