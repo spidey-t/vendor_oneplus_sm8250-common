@@ -2707,7 +2707,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "vendor.qti.hardware.perf@2.2",
+                "prebuilt_vendor.qti.hardware.perf@2.2",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -2723,7 +2723,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "vendor.qti.hardware.perf@2.2",
+                "prebuilt_vendor.qti.hardware.perf@2.2",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -2755,7 +2755,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libqti-util",
                 "libhidlbase",
-                "vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
                 "libbase",
                 "libthermalclient",
                 "libqti-perfd-client",
@@ -2781,7 +2781,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libqti-util",
                 "libhidlbase",
-                "vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
                 "libbase",
                 "libthermalclient",
                 "libqti-perfd-client",
@@ -3675,7 +3675,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.0",
+    name: "prebuilt_vendor.qti.hardware.perf@2.0",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -3718,7 +3719,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.1",
+    name: "prebuilt_vendor.qti.hardware.perf@2.1",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -3729,7 +3731,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.qti.hardware.perf@2.1.so",
             ],
             shared_libs: [
-                "vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -3745,7 +3747,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so",
             ],
             shared_libs: [
-                "vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -3763,7 +3765,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.2",
+    name: "prebuilt_vendor.qti.hardware.perf@2.2",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -3774,8 +3777,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so",
             ],
             shared_libs: [
-                "vendor.qti.hardware.perf@2.0",
-                "vendor.qti.hardware.perf@2.1",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.1",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -3791,8 +3794,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.perf@2.2.so",
             ],
             shared_libs: [
-                "vendor.qti.hardware.perf@2.0",
-                "vendor.qti.hardware.perf@2.1",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.1",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -18083,6 +18086,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdcommonutils",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -18110,7 +18114,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -22026,9 +22029,9 @@ cc_prebuilt_binary {
                 "libhardware_legacy",
                 "libhardware",
                 "libhidlbase",
-                "vendor.qti.hardware.perf@2.0",
-                "vendor.qti.hardware.perf@2.1",
-                "vendor.qti.hardware.perf@2.2",
+                "prebuilt_vendor.qti.hardware.perf@2.0",
+                "prebuilt_vendor.qti.hardware.perf@2.1",
+                "prebuilt_vendor.qti.hardware.perf@2.2",
                 "libperfconfig",
                 "libperfgluelayer",
                 "libqti-perfd-client",
