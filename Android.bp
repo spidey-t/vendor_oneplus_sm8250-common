@@ -3675,6 +3675,144 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.0",
+    owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.1",
+    owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.perf@2.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.perf@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.perf@2.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.perf@2.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.perf@2.2",
+    owner: "oneplus",
+    system_ext_specific: true,
+    vendor_available: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.perf@2.2.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.perf@2.0",
+                "vendor.qti.hardware.perf@2.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.perf@2.2.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.perf@2.0",
+                "vendor.qti.hardware.perf@2.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.vpp@1.2",
     owner: "oneplus",
     strip: {
@@ -21873,6 +22011,11 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.qti.hardware.perf@2.2-service",
     owner: "oneplus",
+    required: [
+        "vendor.qti.hardware.perf@2.0",
+        "vendor.qti.hardware.perf@2.1",
+        "vendor.qti.hardware.perf@2.2",
+    ],
     target: {
         android_arm64: {
             srcs: [
